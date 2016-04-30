@@ -46,14 +46,43 @@ body{
 /* region: mainContent */
 
 .content{
-
+  margin-top:50px;
 }
 
-.game_name{
-
+.gameEntry{
+  font-family:arial;
+  margin-top:10px;
+  margin-left:10px;
+  height:34px;
+  width:80%;
+  background-color:#6b99c7;
+  border-radius:5px;
 }
 
-.game_score{
+.gameEntry .collapseIcon{
+  font-size:30px;
+  padding:0 10px 0 10px;
+  border-right:2px solid black;
+}
 
+.gameEntry .gameTitle{
+  font-size:20px;
+  margin-left:5px;
+  margin-right:5px;
+  position:relative;
+  bottom:3px;
+}
+
+.gameEntry .gameScore{
+  background-color:#59c059;
+  font-size:20px;
+  float:right;
+  height:26px;
+  padding:5px 4px 3px 4px;
+  width:40px;
+  border-left:2px solid black;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  text-align:center;
 }
 /* endRegion mainContent */
