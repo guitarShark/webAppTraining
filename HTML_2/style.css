@@ -1,0 +1,12 @@
+.knight {
+  display:inline-block;
+  color: red;
+}
+.knight .jedi{
+  color: blue;
+}
+.knight .sith:hover{
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}

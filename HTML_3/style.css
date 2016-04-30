@@ -1,0 +1,38 @@
+body{
+  margin:0px;
+  }
+.navBar{
+  color:white;
+  height:28px;
+  width:100%;
+  background:#339933;
+  border-bottom:2px solid #133913;
+  padding:5px 20px 0 10px;
+  position:fixed;
+  top:0px;
+  left:0px;
+}
+.logo{
+  font-size:18px;
+  font-weight:bold;
+  float:left;
+}
+  .logo:hover{
+    cursor:pointer;
+  }
+.login{
+  margin-right:22px;
+  font-size:18px;
+  font-weight:bold;
+  float:right;
+}
+  .login:hover{
+    cursor:pointer;
+  }
+.sith{
+  font-size:40px;
+  margin-bottom:80px;
+}
+.content{
+  margin-top:40px;
+}

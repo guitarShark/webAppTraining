@@ -1,0 +1,83 @@
+.navBar {
+  background-color: #386694;
+  height: 28px;
+  padding: 5px 20px 0 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 1;
+  z-index: 100;
+  border-bottom: 2px solid #23405c;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  float: left;
+  font-family: arial;
+  letter-spacing: 1pt;
+}
+
+  .logo .prefix {
+    font-size: 10px;
+    vertical-align: top;
+    margin-top: 2px;
+    float:left;
+    margin-right: 5px;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+.login {
+  color: white;
+  margin-right: 22px;
+  float: right;
+}
+
+  .login:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.content {
+  position: relative;
+  top: 30px;
+}
+
+
+.gameEntry {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 80%;
+  background-color: #6b99c7;
+  border-radius: 5px;
+}
+
+  .gameEntry .collapseIcon {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px;
+    border-right: 2px solid black;
+  }
+
+    .gameEntry .collapseIcon:hover {
+      cursor: pointer;
+    }
+
+  .gameEntry .gameTitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .gameEntry .gameScore {
+    float: right;
+    font-size: 20px;
+    background-color: #59c059;
+    padding: 4px;
+  }
