@@ -54,55 +54,67 @@ body{
   margin-top:10px;
   margin-left:10px;
   width:80%;
+  box-sizing:content-box;
   border: 2px solid #6b99c7;
   border-bottom: none;
   border-top: none;
   border-radius: 0 10px 0 10px;
 }
 
-.gameEntry .gameHeader:hover{
-  cursor:pointer;
-}
+  .gameEntry .gameHeader{
+    border-top-right-radius:10px;
+    height:34px;
+    background-color:#6b99c7;
+    border-bottom-left-radius:10px;
+    border: 1px solid #6b99c7;
+    margin-left: -1px;
+  }
 
-.gameEntry .gameHeader{
-  border-top-right-radius:10px;
-  height:34px;
-  background-color:#6b99c7;
-}
+    .gameEntry .gameHeader:hover{
+      cursor:pointer;
+    }
 
-.gameEntry .collapseIcon{
-  font-size:30px;
-  padding:0 10px 0 10px;
-  border-right:2px solid black;
-}
+  .gameEntry .expanded{
+    border-bottom-left-radius: 0px;
+  }
 
-.gameEntry .gameTitle{
-  font-size:20px;
-  margin-left:5px;
-  margin-right:5px;
-  position:relative;
-  bottom:3px;
-}
+  .gameEntry .collapseIcon{
+    width: 40px;
+    text-align: center;
+    font-size:30px;
+    display:inline-block;
+    border-right:2px solid black;
+  }
 
-.gameEntry .gameScore{
-  background-color:#59c059;
-  font-size:20px;
-  float:right;
-  height:26px;
-  padding:5px 4px 3px 4px;
-  width:40px;
-  border-left:2px solid black;
-  border-top-right-radius:10px;
-  text-align:center;
-}
+  .gameEntry .gameTitle{
+    font-size:20px;
+    margin-left:5px;
+    margin-right:5px;
+    position:relative;
+    bottom:3px;
+  }
 
-.gameEntry .gameDetails{
- border-top: 2px solid black;
- border-bottom: 2px solid #6b99c7;
- border-bottom-left-radius: 10px;
- height: 100px;
- margin-left: -1px;
- margin-right: -1px;
- padding: 5px 8px 10px 8px;
-}
+  .gameEntry .gameScore{
+    background-color:#59c059;
+    font-size:20px;
+    float:right;
+    height:26px;
+    padding:5px 4px 3px 4px;
+    width:40px;
+    border-left:2px solid black;
+    border-top-right-radius:10px;
+    position:relative;
+    left: 1px;
+    text-align:center;
+  }
+
+  .gameEntry .gameDetails{
+   border-top: 2px solid black;
+   border-bottom: 2px solid #6b99c7;
+   border-bottom-left-radius: 10px;
+   height: 100px;
+   margin-left: -1px;
+   margin-right: -1px;
+   padding: 5px 8px 10px 8px;
+  }
 /* endRegion mainContent */

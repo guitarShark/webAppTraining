@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>The Good Game Report</title>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -16,27 +17,31 @@
       </div>
       <div class="content">
         <div class="gameEntry">
-          <div class="gameHeader">
+          <div class="gameHeader" onclick="toggleExpand('tetrisDetails')">
             <span class="collapseIcon">+</span>
             <span class="gameTitle">Tetris</span>
             <span class="gameScore">80</span>
           </div>
+          <div id="tetrisDetails" class="gameDetails" style="display: none">
+          </div>
         </div>
         <div class="gameEntry">
-          <div class="gameHeader">
+          <div class="gameHeader" onclick="toggleExpand('chronoDetails')">
             <span class="collapseIcon">+</span>
             <span class="gameTitle">Chrono Trigger</span>
             <span class="gameScore">97</span>
           </div>
-          <div id="ChronoDetails" class="gameDetails">
+          <div id="chronoDetails" class="gameDetails" style="display: none">
             The weak only strive to be weaker
           </div>
         </div>
         <div class="gameEntry">
-          <div class="gameHeader">
+          <div class="gameHeader" onclick="toggleExpand('over9000Details')">
             <span class="collapseIcon">+</span>
             <span class="gameTitle">Legend of the Super Saiyan</span>
             <span class="gameScore">68</span>
+          </div>
+          <div id="over9000Details" class="gameDetails" style="display: none">
           </div>
         </div>
     </div>
