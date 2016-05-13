@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>The Good Game Report</title>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <div class="navbar">
+        <div class="logo">
+          <div class="prefix">
+            THE
+          </div>
+          Good Game Report
+        </div>
+        <div class="login">Login</div>
+      </div>
+      <div class="content">
+        <div class="gameEntry">
+          <div class="gameHeader" onclick="toggleExpand('tetrisDetails')">
+            <span class="collapseIcon">+</span>
+            <span class="gameTitle">Tetris</span>
+            <span class="gameScore">80</span>
+          </div>
+          <div id="tetrisDetails" class="gameDetails" style="display: none">
+            <div class="detail-item positive">
+              <img src="images/OK.png" class="item-icon"/>
+              <span class="value">Infinite Replayability</span>
+            </div>
+            <div class="detail-item negative">
+              <img src="images/batsu.png" class="item-icon"/>
+              <span class="value">Music is from Soviet Russia</span>
+            </div>
+            <div class="detail-item negative bottom">
+              <img src="images/batsu.png" class="item-icon"/>
+                  <span class="value">No Foo Fighters Music</span>
+            </div>
+          </div>
+        </div>
+        <div class="gameEntry">
+          <div class="gameHeader" onclick="toggleExpand('chronoDetails')">
+            <span class="collapseIcon">+</span>
+            <span class="gameTitle">Chrono Trigger</span>
+            <span class="gameScore">97</span>
+          </div>
+          <div id="chronoDetails" class="gameDetails" style="display: none">
+            <div class="detail-item positive">
+              <img src="images/OK.png" class="item-icon"/>
+              <span class="value">Multiple endings based on in-game actions</span>
+            </div>
+            <div class="detail-item negative bottom">
+              <img src="images/batsu.png" class="item-icon"/>
+              <span class="value">The weak only strive to be weaker</span>
+            </div>
+          </div>
+        </div>
+        <div class="gameEntry">
+          <div class="gameHeader" onclick="toggleExpand('over9000Details')">
+            <span class="collapseIcon">+</span>
+            <span class="gameTitle">Legend of the Super Saiyan</span>
+            <span class="gameScore">68</span>
+          </div>
+          <div id="over9000Details" class="gameDetails" style="display: none">
+            <div class="detail-item positive">
+              <img src="images/OK.png" class="item-icon"/>
+              <span class="value">Krillin is dead</span>
+            </div>
+            <div class="detail-item negative bottom">
+              <img src="images/batsu.png" class="item-icon"/>
+              <span class="value">Krillin is dead</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </body>

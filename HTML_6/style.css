@@ -1,0 +1,148 @@
+body{
+  margin:0;
+}
+
+/* region: navbar */
+
+.navbar{
+  top:0px;
+  color:white;
+  background-color:#386694;
+  position:fixed;
+  height:28px;
+  width:100%;
+  padding:5px 20px 0 10px;
+  border-bottom:2px solid #23405c;
+}
+
+.logo{
+  margin-top:2px;
+  float:left;
+  font-family:arial;
+  letter-spacing:1pt;
+  font-size:18px;
+
+}
+
+  .logo .prefix{
+    float:left;
+    font-size:10px;
+    vertical-align:top;
+    margin-top:2px;
+    margin-right: 5px;
+  }
+
+.login{
+  float:right;
+  margin:5px 22px 0 0;
+  font-size:14px;
+}
+
+.login .hover{
+  cursor:pointer;
+}
+
+/* endRegion navbar */
+/* region: mainContent */
+
+.content{
+  margin-top:50px;
+}
+
+.gameEntry{
+  font-family:arial;
+  margin-top:10px;
+  margin-left:10px;
+  width:80%;
+  box-sizing:content-box;
+  border: 2px solid #6b99c7;
+  border-bottom: none;
+  border-top: none;
+  border-radius: 0 10px 0 10px;
+}
+
+  .gameEntry .gameHeader{
+    border-top-right-radius:10px;
+    height:34px;
+    background-color:#6b99c7;
+    border-bottom-left-radius:10px;
+    border: 1px solid #6b99c7;
+    margin-left: -1px;
+  }
+
+    .gameEntry .gameHeader:hover{
+      cursor:pointer;
+    }
+
+  .gameEntry .expanded{
+    border-bottom-left-radius: 0px;
+  }
+
+  .gameEntry .collapseIcon{
+    width: 40px;
+    text-align: center;
+    font-size:30px;
+    display:inline-block;
+    border-right:2px solid black;
+  }
+
+  .gameEntry .gameTitle{
+    font-size:20px;
+    margin-left:5px;
+    margin-right:5px;
+    position:relative;
+    bottom:3px;
+  }
+
+  .gameEntry .gameScore{
+    background-color:#59c059;
+    font-size:20px;
+    float:right;
+    height:26px;
+    padding:5px 4px 3px 4px;
+    width:40px;
+    border-left:2px solid black;
+    border-top-right-radius:10px;
+    position:relative;
+    left: 1px;
+    text-align:center;
+  }
+
+  .gameEntry .gameDetails{
+    color:white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid #6b99c7;
+    border-bottom-left-radius: 10px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+
+  .gameDetails .detail-item{
+    padding: 5px 8px 10px 8px;
+    border: 1px solid black;
+  }
+
+  .detail-item .item-icon{
+    height: 20px;
+    width: 20px;
+    padding: 5px 5px 0 5px;
+  }
+
+  .gameDetails .positive{
+    background-color: #336600;
+  }
+
+  .gameDetails .negative{
+    background-color: #800000;
+  }
+
+  .gameDetails .bottom{
+    border-bottom-left-radius: 10px;
+  }
+
+  .detail-item .value{
+    display:inline-block;
+    position: relative;
+    bottom: 3px;
+  }
+/* endRegion mainContent */
