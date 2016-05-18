@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>The Good Game Report</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js" crossorigin="anonymous"></script>
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <div id="app" ng-app="ggrApp" ng-controller="homeCtrl">
+        <div class="navbar">
+          <div class="logo">
+            <div class="prefix">
+              THE
+            </div>
+            Good Game Report
+          </div>
+          <div class="login">Login</div>
+        </div>
+        <div class="content">
+          <div ng-repeat="game in data.games">
+            <div class="gameEntry">
+              <div class="gameHeader" ng-click="toggleExpand(game)">
+                <span class="collapseIcon">+</span>
+                <span class="gameTitle">{{game.Name}}</span>
+                <span class="gameScore">{{game.Score}}</span>
+              </div>
+              <div id="{{game.Abbr}}Details" class="gameDetails" style="display: none">
+                <div ng-repeat="item in game.detailItems" class="detail-item {{item.class}}">
+                  <img ng-if="isPositive(item)" src="images/OK.png" class="item-icon"/>
+                  <img ng-if="!isPositive(item)" src="images/batsu.png" class="item-icon"/>
+                  <span class="value">{{item.value}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
